@@ -1,0 +1,38 @@
+<script>
+    // const database = {data:1000}
+// var a = 10;
+// console.log(a)
+
+// setTimeout(()=>{
+//   console.log("Start")
+//   setTimeout(()=>{
+//     console.log(database.data)
+//     setTimeout(()=>{
+//       console.log("END")
+//     },3000)
+//   },2000)
+// }, 1000);
+
+const data = async ()=>{
+    try{
+        const datas = await console.log('Datas');
+        
+        const res = await fetch("https://dummyjson.com/products?limit=2")
+        const data = await res.json();
+        console.log(data);
+        
+        console.log('string',data.products)
+        
+        
+    }catch(err){
+        console.log("err",err.message)
+    }
+}
+
+
+data()
+
+
+
+
+</script>

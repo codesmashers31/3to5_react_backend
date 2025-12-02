@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="heading">Datas</h1>
+    <button id="btn">Click Me</button>
+
+
+
+    <script>
+        const text = document.getElementById("heading")
+        const btn_new = document.getElementById("btn")
+
+        btn_new.addEventListener("click",()=>{
+            text.innerHTML = "This text is changing"
+        })
+    </script>
+</body>
+</html>
