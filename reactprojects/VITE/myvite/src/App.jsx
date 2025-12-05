@@ -1,23 +1,20 @@
 import NavBar from "./NavBar";
 
-const App = ()=>{
+const App = () => {
 
 
 
-return (
-  <>
-   <div>
-    This is My First File
-  </div>
-  <NavBar/>
-  
-  </>
- 
+  return (
+    <>
+      <div>
+        This is My First File
+      </div>
+      <NavBar />
 
-  
-)
+    </>
 
 
+  )
 
 }
 
