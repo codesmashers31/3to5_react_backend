@@ -1,29 +1,31 @@
-import React from 'react'
-import NavBar from './components/NavBar'
-import { Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
-import Intraction from './components/Intraction'
-import Function_Process from './components/Function_Process'
-import Container from './components/Container'
+// 
 
-const App = () => {
+import { useState } from "react";
+
+const App = ()=>{
+console.log('compoenent running');
+
+
+ const [count,SetCount] = useState(0)
+  
+
+  const countup = ()=>{
+
+     SetCount(count+1)
+   
+
+  }
+
   return (
     <>
-    <header>
-      <NavBar/>
-    </header>
-
-    <main>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/intract' element={<Intraction/>} />
-        <Route path='/function' element={<Function_Process/>}/>
-        <Route path='/container' element={<Container/>}/>
-      </Routes>
-    </main>
-    
+    <div className="p-5">
+      <h1>Variable</h1>
+      <h1>{count}</h1>
+        <button onClick={countup}>Click me</button>
+    </div>
     </>
   )
+
 }
 
-export default App
+export default App;
