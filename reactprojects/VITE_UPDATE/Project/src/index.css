@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #8b5cf6; /* Violet 500 */
+  --color-brand-secondary: #06b6d4; /* Cyan 500 */
+  --color-brand-dark: #0f172a; /* Slate 900 */
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  @apply bg-slate-950 text-white font-sans antialiased;
+  background: radial-gradient(circle at top center, #1e1b4b 0%, #020617 100%);
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #c084fc, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
