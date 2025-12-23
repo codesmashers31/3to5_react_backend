@@ -28,3 +28,27 @@ const Themechange = () => {
 }
 
 export default Themechange
+
+
+
+
+
+
+
+// State - it is the object - in class components - the main work is 
+// to showing to datas on the screen -  state is a read only  - when the state is bacome the update mode
+// its re-render the components -  
+
+
+// When we use the Functional components - useState() - to allow the state and state update function in the same function hooks that is called useState.apply
+
+
+// we can declare or init - using primitive and non primitive data types . 
+
+
+// when you want to use state . - 
+
+
+// Create - store
+
+
