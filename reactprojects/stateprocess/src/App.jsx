@@ -5,6 +5,8 @@ import HideandShow from './components/HideandShow'
 import Shop from './components/Shop'
 import Products from './components/Products'
 import StarRating from './components/StarRating'
+import { Route, Routes } from 'react-router-dom'
+import NewProduct from './components/NewProduct'
 
 const App = () => {
   return (
@@ -16,7 +18,12 @@ const App = () => {
    {/* <Shop/> */}
    <Products/>
 
-   <StarRating/>
+   {/* <StarRating/> */}
+
+   <Routes>
+
+    <Route path="/newproduct" element={<NewProduct/>} />
+         </Routes>
 
    </>
   )
