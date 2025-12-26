@@ -1,6 +1,7 @@
 
 // import { useEffect, useState } from 'react'
 
+import NewTimer from "./components/NewTimer"
 import Timer from "./components/Timer"
 
 
@@ -60,7 +61,8 @@ const App = () => {
 
 
 
-<Timer/>
+{/* <Timer/> */}
+<NewTimer/>
     
    </>
   )
