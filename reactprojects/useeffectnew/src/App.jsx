@@ -1,6 +1,9 @@
 
 // import { useEffect, useState } from 'react'
 
+import { Route, Routes } from "react-router-dom"
+import About from "./components/About"
+import LifeCycle from "./components/LifeCycle"
 import NewTimer from "./components/NewTimer"
 import Timer from "./components/Timer"
 
@@ -62,7 +65,15 @@ const App = () => {
 
 
 {/* <Timer/> */}
-<NewTimer/>
+{/* <NewTimer/> */}
+
+
+
+<Routes>
+
+  <Route path="/about" element={<About/>} />
+  <Route path="/" element={<LifeCycle/>} />
+</Routes>
     
    </>
   )

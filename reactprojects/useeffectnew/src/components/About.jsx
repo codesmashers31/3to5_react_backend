@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const About = () => {
     console.log('i am about');
@@ -6,7 +7,9 @@ const About = () => {
   return (
     <div>
       About
+      <Link to="/">Home</Link>
     </div>
+
   )
 }
 
