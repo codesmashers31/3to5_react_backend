@@ -4,18 +4,21 @@ import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ContectPage from './pages/Contect'
+import MainApp from './components/MainApp'
 
 const App = () => {
   return (
     <>
-    <header>
-    <NavBar/>
-    </header>
+    
     <main>
      <Routes>
-        <Route path='/' element={<HomePage/>} />
-        <Route path='/aboutpage' element={<AboutPage/>} />
-        <Route path='/contectpage' element={<ContectPage/>} />
+        
+        <Route element={<MainApp/>}>
+          
+          <Route path='/' element={<HomePage/>} />
+        </Route>
+       <Route path='/contectpage' element={<ContectPage/>} />
+        
      </Routes>
     </main>
 
