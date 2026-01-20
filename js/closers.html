@@ -1,0 +1,26 @@
+<script>
+    
+    const inc = ()=>{
+
+        let count = 0
+        
+        return ()=>{
+            count = count+1
+
+            return count
+        }
+    }
+
+    const increment = inc()
+
+    console.log(increment());
+     console.log(increment());
+      console.log(increment());
+    
+
+    count = 10
+    console.log(count);
+    
+
+     console.log(increment());
+</script>
